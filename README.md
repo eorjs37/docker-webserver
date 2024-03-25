@@ -20,6 +20,14 @@ docker build --platform linux/amd64 -t eorjs37/nginx-webserver:1.0 .
 docker run --name=nginx-webserver -d -p 80:80 eorjs37/nginx-webserver:1.0
 ```
 
+```bash
+docker run --name=nginx-webserver -d -p 80:80 -v /var/ssl:/var/ssl eorjs37/nginx-webserver:1.0
+```
+
+```bash
+docker run --name=nginx-webserver -d -p 443:443 -v /var/ssl:/var/ssl eorjs37/nginx-webserver:1.0
+```
+
 ## hub push
 
 ```bash
