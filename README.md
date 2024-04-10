@@ -33,3 +33,11 @@ docker run --name=nginx-webserver -d -p 443:443 -v /var/ssl:/var/ssl eorjs37/ngi
 ```bash
 docker push eorjs37/nginx-webserver:1.0
 ```
+
+```bash
+docker pull eorjs37/nginx-webserver:1.0
+```
+
+```bash
+docker image prune -a --force --filter "until=1h"
+```
